@@ -1,0 +1,13 @@
+・分割代入
+const profile = ['前田',28]
+const[name,age]=profile;
+
+--const ans = '名前は${name},年は${age}'
+配列に命名できることを分割代入
+
+
+・スプレッド構文
+const foo = [1, 2];
+
+// 配列のクローン
+const bar = [...foo]; // => [1, 2]
