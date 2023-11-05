@@ -11,3 +11,34 @@ const foo = [1, 2];
 
 // 配列のクローン
 const bar = [...foo]; // => [1, 2]
+
+
+
+DOM操作
+//1.htmlのidで追加する要素指定
+    <input id="add-text" placeholder="todoを入力">
+    <button id="add-button">追加</button>
+
+    <div>
+        <p>未完了のtodo</p>
+        <ul id="incomplete-list">
+
+        </ul>
+    </div>
+
+//2追加
+
+const onClickAdd = () => {
+    //テキストボックスの値を取得して初期化
+    const inputText = document.getElementById("add-text").value;
+    document.getElementById("add-text").value = "";
+
+    //divの子要素を追加
+    div.appendChild(li);
+    //ここで追加
+    document.getElementById("incomplete-list").appendChild(div);
+}
+
+document
+    .getElementById("add-button")
+    .addEventListener("click", () => onClickAdd());
